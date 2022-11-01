@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { MotosComponent } from './motos/motos.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { ContactosComponent } from './contactos/contactos.component';
+import { NavmenuComponent } from './navmenu/navmenu.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ContactosComponent } from './contactos/contactos.component';
     HomeComponent,
     MotosComponent,
     FormularioComponent,
-    ContactosComponent
+    ContactosComponent,
+    NavmenuComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
