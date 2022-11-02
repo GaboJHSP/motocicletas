@@ -1,2 +1,204 @@
-<h1>.</h1>
-<p>formulario works!</p>
+<h4>.</h4>
+<h3>.</h3>
+<div class="container">
+    <main>
+      <div class="row g-1">
+        <div class="col-md-7 col-lg-12">
+            <div class="col text-uppercase text-center">
+                <h2>Formulario de compra</h2>
+              </div>
+          <form class="needs-validation" novalidate>
+            <h4 class="mb-3">Datos del cliente</h4>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Nombre(s):</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere que ingrese Nombre(s)
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Apellidos:</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere que ingrese Apellidos
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">NIT/CI:</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere un NIT/CI para la factura
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Número de Celular:</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere que un numero telefonico
+                </div>
+              </div>
+              <div class="col-6">
+                <label for="email" class="form-label">Correo Electrónico o Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                <div class="invalid-feedback">
+                  Se requiere que ingresa su Gmail o Email
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="country" class="form-label">Departamento:</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Seleccione departamento</option>
+                  <option>La Paz</option>
+                  <option>Cochabamba</option>
+                  <option>Santa Cruz</option>
+                  <option>Otros</option>
+                </select>
+                <div class="invalid-feedback">
+                  Se requiere que seleccione un departamento
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Razón Social/Nombre:</label>
+                <input type="text" class="form-control" id="email" placeholder="" required>
+                <div class="invalid-feedback">
+                  Se requiere que ingresa su Gmail o Email
+                </div>
+              </div>
+              <hr class="my-4">
+              <h4 class="mb-3">Datos de la Motocicleta</h4>
+              <div class="col-sm-8">
+                <label for="firstName" class="form-label">Nombre de la Motocicleta:</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere que ingrese Nombre de la Motocicleta
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="country" class="form-label">Disponibilidad:</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Seleccione disponibilidad</option>
+                  <option>Comun</option>
+                  <option>Exclusivo</option>
+                </select>
+                <div class="invalid-feedback">
+                  Se requiere que seleccione un departamento
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Precio:</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere el precio de la Motocicleta
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Marca:</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Se requiere la Marca de la motocicleta
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Soy mayor de 18 años</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Leí y acepto los derechos y reglamentos de la empresa</label>
+              </div>
+              <hr class="my-4">
+              <h4 class="mb-3">Metodos de Pago</h4>
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Tarjeta de credito</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Tarjeta de debito</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+                <div class="col-md-12">
+                  <label for="cc-number" class="form-label">Numero de tarjeta</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Tarjeta de credito
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="cc-expiration" class="form-label">Fecha de Exipacion</label>
+                  <select class="form-select" id="month" required>
+                  <option value="">Seleccione un mes</option>
+                  <option>Enero</option>
+                  <option>Febrero</option>
+                  <option>Marzo</option>
+                  <option>Abril</option>
+                  <option>Mayo</option>
+                  <option>Junio</option>
+                  <option>Julio</option>
+                  <option>Agosto</option>
+                  <option>Septiembre</option>
+                  <option>Octubre</option>
+                  <option>Noviembre</option>
+                  <option>Diciembre</option>
+                </select>
+                <div class="invalid-feedback">
+                  Se requiere que seleccione un mes
+                </div>
+                </div>
+                <div class="col-md-4">
+                <label for="cc-expiration" class="form-label"> .</label>
+                  <select class="form-select" id="year" required>
+                  <option value="">Seleccione un año</option>
+                  <option>2022</option>
+                  <option>2021</option>
+                  <option>2020</option>
+                  <option>2019</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                </select>
+                <div class="invalid-feedback">
+                  Se requiere que seleccione un año
+                </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Seguridad
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="h-100 d-flex align-items-center justify-content-center">
+                <form>
+                <input class="btn btn-primary" type="button" value="Enviar Formulario" onClick="mostrarAlerta()">
+            </form>
+            </div>
+            <br>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="javas/bootstrap.bundle.min.js"></script>
+  <script src="javas/form-validation.js"></script>
+  <script>
+    function mostrarAlerta()
+    {
+      alert('Se envio el formulario. Se le notificara sobre su pedido en su correo electronico. Gracias por su preferencia');
+    }
+    
+  </script>
